@@ -14,6 +14,7 @@ const MAX_THEORY_ENROLLS = 5; // Maximum allowed theory subjects
 const MAX_LAB_ENROLLS = 2; // Maximum allowed lab subjects
 
 const CourseList: React.FC = () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [courses, setCourses] = useState<Course[]>([]);
     const [enrolledCourses, setEnrolledCourses] = useState<string[]>([]); // Track enrolled courses
     const [theoryCourses, setTheoryCourses] = useState<Course[]>([]); // Theory courses

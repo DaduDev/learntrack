@@ -14,10 +14,8 @@ const MAX_THEORY_ENROLLS = 5; // Maximum allowed theory subjects
 const MAX_LAB_ENROLLS = 2; // Maximum allowed lab subjects
 
 const CourseList: React.FC = () => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [courses, setCourses] = useState<Course[]>([]);
     const [enrolledCourses, setEnrolledCourses] = useState<string[]>([]); // Track enrolled courses
-    const [theoryCourses, setTheoryCourses] = useState<Course[]>([]); // Theory courses
+    const [theoryCourses] = useState<Course[]>([]); // Theory courses
     const [labCourses, setLabCourses] = useState<Course[]>([]); // Lab courses
     const db = getFirestore();
     const auth = getAuth(); 
@@ -31,20 +29,13 @@ const CourseList: React.FC = () => {
                 id: doc.id,
                 ...doc.data(),
             })) as Course[];
-            setCourses(coursesData);
-            filterCourses(coursesData); // Filter courses after fetching
+            setLabCourses(coursesData);
         } catch (error) {
             console.error("Error fetching courses:", error);
         }
     };
 
     // Separate theory and lab courses based on the 'name' field
-    const filterCourses = (courses: Course[]) => {
-        const theory = courses.filter(course => !course.name.toLowerCase().includes("lab"));
-        const labs = courses.filter(course => course.name.toLowerCase().includes("lab"));
-        setTheoryCourses(theory);
-        setLabCourses(labs);
-    };
 
     // Fetch enrolled courses of the current user
     const fetchUserEnrollments = async () => {

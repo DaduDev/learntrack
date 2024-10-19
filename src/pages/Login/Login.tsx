@@ -46,6 +46,7 @@ const Login = () => {
             <h1 style={{
                 fontSize: '2rem',
                 marginBottom: '1rem',
+                color: 'black'
                 borderBottom: '1px solid #0A3D62',
             }} onClick={() => {
               window.location.href = '/';

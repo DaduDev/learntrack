@@ -70,6 +70,7 @@ const getRandomEmoji = () => {
                 fontSize: '2rem',
                 marginBottom: '1rem',
                 borderBottom: '1px solid #0A3D62',
+                color: 'black',
             }} onClick={() => {
               window.location.href = '/';
             }}>Learn Track</h1>

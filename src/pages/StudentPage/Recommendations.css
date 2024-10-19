@@ -1,0 +1,70 @@
+.recommendation-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    font-size: 1em;
+    margin-bottom: 8px;
+    display: block;
+}
+
+select {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #007BFF; /* Bootstrap primary color */
+    outline: none;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #555;
+}
+
+.faculty-list {
+    margin-top: 15px;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.faculty-item {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.faculty-item:hover {
+    background-color: #e2e6ea; /* Light grey for hover effect */
+}
+
+strong {
+    font-weight: bold;
+}
+
+p {
+    color: #777;
+    font-size: 0.9em;
+}

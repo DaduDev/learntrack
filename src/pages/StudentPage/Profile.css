@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa; /* Light background for a modern feel */
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything */
+    max-width: 900px;
+    margin: 40px auto; /* Spacing from the top */
+    padding: 20px;
+    background-color: #fff; /* White background for profile section */
+    border-radius: 12px; /* Rounded edges for modern look */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all the text and avatar */
+    margin-bottom: 40px; /* Space below the profile */
+  }
+  
+  .profile-avatar {
+    font-size: 5rem; /* Large font size for the avatar letter */
+    margin-bottom: 20px;
+    background-color: #007bff; /* Blue background to make it stand out */
+    color: #fff;
+    border-radius: 50%; /* Circular avatar */
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Shadow for depth */
+  }
+  
+  .profile-name {
+    font-size: 2.5rem; /* Large font size for the name */
+    font-weight: 600; /* Bold */
+    margin-bottom: 10px;
+    color: #333; /* Dark color for readability */
+  }
+  
+  .profile-info {
+    font-size: 1.2rem;
+    color: #555; /* Softer color for less important info */
+    margin-bottom: 5px;
+  }
+  
+  .courses-container {
+    width: 100%;
+    margin-top: 40px; /* Spacing from profile section */
+    padding: 0 20px;
+  }
+  
+  .courses-header {
+    font-size: 2rem; /* Larger font size for the courses header */
+    font-weight: 600;
+    text-align: center; /* Centered heading */
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+  }
+  
+  .course-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .course-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Elevate the card on hover */
+  }
+  
+  .course-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .course-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  

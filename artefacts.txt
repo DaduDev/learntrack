@@ -1,0 +1,26 @@
+Tools Used:
+    1. VS Code
+    2. Firebase
+    3. frame VR
+    4. Voice Flow
+
+Database used: Firebase Firestore
+
+Framework: React JS
+
+Library used: Vite
+
+Language used : TypeScript
+
+Many third party libraries are installed in the app, so before starting the development server, run the following command:
+                    npm install
+
+To start the development server: 
+                    npm run dev
+
+Feature Integrated:
+    1. Menu based voice chat bot
+    2. Virtual Reality Environment
+    3. Two types of User authentication
+    4. Student feedback on teacher's anonumously
+    5. Only 4 theory subjects and 2 laboratory subjects can be taken by the Student
